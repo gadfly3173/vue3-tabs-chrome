@@ -21,7 +21,7 @@
           </svg>
         </div>
         <div class="tabs-close" @click.stop="handleDelete(tab, i)" v-show="showTabCloseIcon(tab)">
-          <svg class="tabs-close-icon" width="16" height="16" stroke="#595959">
+          <svg class="tabs-close-icon" width="13.5" height="13.5" stroke="#595959">
             <path d="M 4 4 L 12 12 M 12 4 L 4 12"></path>
           </svg>
         </div>
@@ -554,7 +554,7 @@ export default defineComponent({
   @bg: #dee1e6;
   @gap: 7px;
   @divider: #a9adb0;
-  @speed: 150ms;
+  @speed: 250ms;
 
   padding-top: 10px;
   background-color: @bg;
@@ -681,10 +681,11 @@ export default defineComponent({
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    padding: 0.5px;
 
     &:hover {
       stroke: #000;
-      background-color: #e8eaed;
+      background-color: #d0d0d0;
     }
   }
 
